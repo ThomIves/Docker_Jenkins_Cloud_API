@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ("Pull Updates"){
             steps {
-                sh "git pull master"
+                echo "In process"
             }
         }
     }
