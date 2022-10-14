@@ -1,9 +1,9 @@
 pipeline {
     agent any 
     stages {
-        stage ("Update Files"){
+        stage ("Pull Updates"){
             steps {
-                echo "Files Updated"
+                sh "git pull"
             }
         }
     }
