@@ -1,0 +1,10 @@
+pipeline {
+    agent any 
+    stages {
+        stage ("Update Files"){
+            steps {
+                echo "Files Updated"
+            }
+        }
+    }
+}
