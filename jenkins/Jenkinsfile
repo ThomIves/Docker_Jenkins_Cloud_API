@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ("Pull Updates"){
             steps {
-                echo "In process"
+                sh "git clone https://github.com/ThomIves/Docker_Jenkins_Cloud_API.git"
             }
         }
     }
