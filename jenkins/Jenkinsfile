@@ -8,7 +8,7 @@ pipeline {
         }
         stage ("Pull Updates From Master"){
             steps {
-                git branch: 'master', url: 'https://github.com/ThomIves/Docker_Jenkins_Cloud_API.git', pull
+                git pull 'https://github.com/ThomIves/Docker_Jenkins_Cloud_API.git'
             }
         }
         stage ("Report Status"){
