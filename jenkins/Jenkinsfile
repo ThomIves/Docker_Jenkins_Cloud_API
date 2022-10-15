@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ("Remove Git Directory"){
             steps {
-                sh "rmdir /home/thom/Other_Git_Repos/docker-course-warp-9/My_Docker_Stuff/Docker_Jenkins_Cloud_API"
+                sh "rm -rf /home/thom/Other_Git_Repos/docker-course-warp-9/My_Docker_Stuff/Docker_Jenkins_Cloud_API"
             }
         }
         stage ("Go To Git Directory"){

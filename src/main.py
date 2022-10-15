@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "The HARD CORE Method!"}
+    return {"message": "The SUPER Hard Core Method!"}
