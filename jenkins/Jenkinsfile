@@ -1,9 +1,19 @@
 pipeline {
     agent any 
     stages {
-        stage ("Pull Updates"){
+        stage ("Go To Git Directory"){
             steps {
-                echo "Hi Thom"
+                sh "cd /home/thom/Other_Git_Repos/docker-course-warp-9/My_Docker_Stuff/Docker_Jenkins_Cloud_API"
+            }
+        }
+        stage ("Pull Updates From Master"){
+            steps {
+                sh "git pull master"
+            }
+        }
+        stage ("Go To Git Directory"){
+            steps {
+                echo "Updates Complete."
             }
         }
     }
