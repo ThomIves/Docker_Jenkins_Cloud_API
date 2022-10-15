@@ -11,7 +11,7 @@ pipeline {
                 sh "git pull master"
             }
         }
-        stage ("Go To Git Directory"){
+        stage ("Report Status"){
             steps {
                 echo "Updates Complete."
             }
