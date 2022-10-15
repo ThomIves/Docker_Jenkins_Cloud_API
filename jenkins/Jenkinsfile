@@ -1,14 +1,19 @@
 pipeline {
     agent any 
     stages {
-        stage ("Go To Git Directory"){
+        stage ("Remove Git Directory"){
             steps {
-                sh "cd /home/thom/Other_Git_Repos/docker-course-warp-9/My_Docker_Stuff/Docker_Jenkins_Cloud_API"
+                sh "rmdir /home/thom/Other_Git_Repos/docker-course-warp-9/My_Docker_Stuff/Docker_Jenkins_Cloud_API"
             }
         }
-        stage ("Pull Updates From Master"){
+        stage ("Go To Git Directory"){
             steps {
-                sh "git pull 'https://github.com/ThomIves/Docker_Jenkins_Cloud_API.git'"
+                sh "cd /home/thom/Other_Git_Repos/docker-course-warp-9/My_Docker_Stuff"
+            }
+        }
+        stage ("Clone Repo"){
+            steps {
+                sh "git clone https://github.com/ThomIves/Docker_Jenkins_Cloud_API.git"
             }
         }
         stage ("Report Status"){
