@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage ("Go To Git Directory"){
             steps {
-                sh "cd /home/thom/Other_Git_Repos/docker-course-warp-9/My_Docker_Stuff/Docker_Jenkins_Cloud_API"
+                sh "cd /home/thom/.jenkins/workspace/Docker_Jenkins_Cloud_API"
             }
         }
         stage ("Pull Changes From Repo"){
