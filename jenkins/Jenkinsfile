@@ -8,7 +8,7 @@ pipeline {
         }
         stage ("Pull Updates From Master"){
             steps {
-                sh "git pull master"
+                sh "ls"
             }
         }
         stage ("Report Status"){
