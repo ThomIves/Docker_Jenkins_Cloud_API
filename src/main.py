@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "With the script generator ..."}
+    return {"message": "I think that it is working now :-) "}
