@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "The SUPER Hard Core Method!"}
+    return {"message": "With the script generator ..."}
