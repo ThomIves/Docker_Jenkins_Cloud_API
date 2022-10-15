@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hey - Need to Watch For Changes On Remote, So I Am Studying That."}
+    return {"message": "Hey - Being More specific with ops on local machine using repo."}
